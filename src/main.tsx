@@ -2,7 +2,6 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 import './styles/index.css'
-import './styles/App.css'
 import 'reactflow/dist/style.css';
 import { Provider } from 'react-redux'
 import { store } from './redux/store.ts'

@@ -13,6 +13,5 @@ export interface ExtractedItem {
     text: string;
   }
 export type TinitialState = {
-    nodes:TNode[]|null
-    extract:boolean
+    nodes:TNode[] | []
 }

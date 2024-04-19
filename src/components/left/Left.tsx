@@ -1,17 +1,14 @@
 import React from 'react';
-import MenuExtractionPanel from './MenuExtractionPanel'; // Assuming MenuExtractionPanel is a component
+import MenuExtractionPanel from './MenuExtractionPanel';
 
-interface MenuExtractionPanelProps {
-}
 
-const Left: React.FC<MenuExtractionPanelProps> = () => {
+const Left = () => {
   return (
-    <div className='left relative h-screen'>
-      <div className="container my-8 ">
+    <div className=' left relative h-full'>
+      <div>
       <MenuExtractionPanel />
-      <div className='h-full absolute top-0 -right-4 w-[1px] bg-slate-500 '/>
+      <div className='h-screen absolute top-0 -right-4 w-[1px] bg-slate-500 '/>
       </div>
-
     </div>
   );
 };
