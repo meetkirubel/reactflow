@@ -21,7 +21,7 @@ const AddSingelNode = () => {
   };
   
   return (
-    <div className="flex gap-8 pb-8 align-middle">
+    <div className="flex gap-4 pb-8 align-middle flex-wrap">
       <Input
         value={inputText}
         onChange={handleInputChange}

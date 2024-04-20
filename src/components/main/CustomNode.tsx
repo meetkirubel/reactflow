@@ -19,8 +19,9 @@ const CustomNode = ({
   id,
 }: NodeProps<{ label: string; id: string }>) => {
   return (
-    <div className="border min-w-48 p-4 bg-white rounded-md flex align-middle justify-center relative">
-      <p> {label} </p>
+    <div 
+    className="border min-w-48 p-4 bg-white rounded-md flex align-middle justify-center relative">
+      <p  > {label} </p>
       <div className="absolute right-[5%] top-[50%] translate-y-[-40%]">
         <Dropdown id={id} />
       </div>

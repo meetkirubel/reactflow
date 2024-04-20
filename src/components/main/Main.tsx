@@ -12,13 +12,13 @@ import ReactFlow, {
 import { v4 as uuidv4 } from "uuid";
 import AddSingelNode from "./AddSingelNode";
 import CustomNode from "./CustomNode";
-
+const nodeTypes = {
+  customNode: CustomNode,
+ };
 const initialEdges: Edge[] = [];
 
 const Main = () => {
-  const nodeTypes = {
-    customNode: CustomNode,
-  };
+
   const initialNodes = useSelectorApp((state) => state.Nodes.nodes);
 
   const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes);
@@ -35,9 +35,9 @@ const Main = () => {
   }, [initialNodes]);
 
   return (
-    <main className="h-full min-h-screen">
+    <main className="min-h-screen">
       <AddSingelNode/>
-      <div className="border h-full w-[96%]">
+      <div className="border h-[100vh] w-[100%] ">
         <ReactFlow
           nodes={nodes}
           edges={edges}

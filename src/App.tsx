@@ -7,7 +7,6 @@ function App() {
     <div className="app">
       <header>
       <h1> React Flow.</h1>
-      <h3>@meetkirubel</h3>
       </header>
       <div className="main-container  min-h-screen">
         <Left />

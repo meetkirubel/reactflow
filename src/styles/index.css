@@ -82,11 +82,14 @@
     --black: #242425;
     --white: #ffffff;
    }
+   html {
+    width: 100%;
+   }
   
-   body{
+   /* body{
     overflow-x: hidden;
      /* background-color: var(--black); */
-   }
+   /* } */
    header {
     display: flex;
     justify-content: space-between;
@@ -106,7 +109,7 @@
   
    }
    .app{
-    padding: 2rem;
+    padding: 1rem;
    }
    .main-container {
     margin-inline: auto;
@@ -115,11 +118,14 @@
     gap: 3rem;
    }
    @media screen and (max-width: 675px){
+    .div{
+      display: none;
+    }
     .main-container {
       margin-inline: auto;
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 3rem;
+      display: flex;
+      flex-direction: column;
+      gap: 6rem;
      }
      h1 {
       font-size: 2rem;
