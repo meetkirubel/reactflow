@@ -25,7 +25,7 @@ const AddSingelNode = () => {
       <Input
         value={inputText}
         onChange={handleInputChange}
-        className="w-[26rem]"
+        className="w-[20rem]"
         type="email"
         placeholder="Add node here..."
         required
