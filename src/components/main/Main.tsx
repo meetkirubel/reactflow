@@ -34,6 +34,22 @@ const Main = () => {
     setNodes(initialNodes);
   }, [initialNodes]);
 
+  
+  
+  const regex = /((\+1)[ - ]?)?(\d{3})[ - ]?(\d{3})[ - ]?(\d{4})/g;
+
+  const phoneNumber = "+1 222-333-4444";
+  const match = regex.test(phoneNumber);
+  
+  if (match) {
+    console.log("Valid phone number format");
+  } else {
+    console.log("Invalid phone number format");
+  }
+
+
+
+
   return (
     <main className="min-h-screen">
       <AddSingelNode/>
@@ -55,3 +71,4 @@ const Main = () => {
 };
 
 export default Main;
+
